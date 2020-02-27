@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.withslider {
+  max-width: 600px;
+}
+
 .text-block {
   display: block;
 }

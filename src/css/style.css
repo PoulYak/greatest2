@@ -84,6 +84,17 @@ body {
   font-weight: 700;
 }
 
+.item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover, .item-7:hover, .item-8:hover, .item-9:hover {
+  text-decoration: none;
+}
+
+@media screen {
+  .item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover, .item-7:hover, .item-8:hover, .item-9:hover {
+    -webkit-transform: translate(-5px, -10px);
+            transform: translate(-5px, -10px);
+  }
+}
+
 .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9 {
   background-size: cover;
   background-position: 50%, 50%;
@@ -91,12 +102,6 @@ body {
   margin-bottom: 50px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-.item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover, .item-7:hover, .item-8:hover, .item-9:hover {
-  text-decoration: none;
-  -webkit-transform: translate(-5px, -10px);
-          transform: translate(-5px, -10px);
 }
 
 .item-1 {
