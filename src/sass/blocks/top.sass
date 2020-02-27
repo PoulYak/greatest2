@@ -1,0 +1,217 @@
+.text-block
+	display: block
+.card1
+ 
+	@media ( max-width: 500px)
+		min-width: 250px
+		height: 500px
+	@media ( min-width: 500px)
+		min-width: 450px
+		height: 600px
+ 
+ perspective: 5000px
+ position: relative
+	margin-bottom: 40px
+
+
+.font, .back
+
+ position: absolute
+ width: 100%
+ height: 100%
+ top: 0
+ left: 0
+ display: flex
+ padding-left: 20px
+	padding-right: 5px
+	padding-top: 2px
+ transition: 1S
+ backface-visibility: hidden
+ border-radius: 10px
+.underthis
+	text-align: right
+	
+.font 
+	z-index: 10
+ border: 3px solid #1c83a0
+ background-color: #fff
+	display: flex
+	justify-content: space-around
+	flex-direction: column
+ h4 
+		
+		@media ( max-width: 499.9px )
+			font: small-caps bold 25px/1 sans-serif
+		@media ( min-width: 500px )
+		
+			font: small-caps bold 40px/1 sans-serif
+	p
+		color: #2378cc
+		opacity: 0.6
+.carousel
+	border-radius: 10px
+	margin-bottom: 50px
+	&-inner
+		border-radius: 10px
+	&-caption
+		a
+			font-weight: bold
+			font-size: 29px
+
+	&-item
+		img
+			width: 100px
+			border-radius: 10px
+		
+.this
+	
+	display: block
+	margin-left: auto
+	max-width: 300px
+	min-width: 40px 
+	@media ( max-width: 500px)
+		width: 50% 
+	@media ( min-width: 500px)
+			width: 100% 
+		
+
+.back 
+ transform: rotateY(180deg)
+ z-index: 0
+	backdrop-filter: blur(10px)
+ border: 2px solid #0d5799
+
+	backdrop-filter: blur(10px)
+
+.card1:hover .font
+	transform: rotateY(180deg)
+.card1:hover .back
+	transform: rotateY(360deg)
+
+
+.crit
+	h2
+		@media ( max-width: 499.9px )
+			font-size: 20px
+		@media ( min-width: 500px )
+			font-size: 25px
+
+.row
+	a
+		display: inline-block
+	 font-size: 30px
+		margin-top: auto
+		margin-bottom: auto
+
+.price
+	
+	@media ( max-width: 499.9px )
+		font-size: 15px
+	@media ( min-width: 500px )
+		font-size: 25px
+	text-align: center
+	display: flex
+	justify-content: center
+	flex-direction: column
+	color: #fff
+	p
+		font-weight: bold
+		display: block
+		margin-top: auto
+		margin-bottom: auto
+
+
+.success
+	@media ( max-width: 992px)
+		
+		border-top-right-radius: 7px
+		border-top-left-radius: 7px
+	@media ( min-width: 992.1px)
+		border-top-left-radius: 7px
+	
+		
+	background-color: #7fe296
+	color: #065810
+	ul
+		li
+			list-style-type: none
+			&::before 
+  		content: '✔'
+  		
+
+.aler
+	@media ( min-width: 992.1px)
+		border-top-right-radius: 7px
+	
+	background-color: #d37474
+	color: #790000
+	ul
+		li
+			list-style-type: none
+			&::before 
+  		content: '❌'
+ul
+	padding: 0
+
+.container
+	.row
+		padding: 0
+
+.contant
+	.title-top
+		width: 100%
+		font-size: 35px
+		font-weight: bold
+		text-align: center
+		color: #fff
+	@media ( max-width:  993.9px) and ( min-width:  768.1px)
+		padding-top: 80px
+	@media ( max-width:  1200px)
+		padding-top: 30px
+	@media ( min-width:  1200.1px)
+		padding-top: 50px
+		
+	
+
+.slider-items
+	padding-left: 10px
+	padding-right: 10px
+	text-align: center
+	display: flex
+	justify-content: space-between
+	width: 100px
+	p
+		font-weight: bold
+		
+		@media  ( max-width: 600px )
+			font-size: 20px
+		@media  ( min-width: 599.999px )
+			font-size: 25px
+			
+	a
+		
+		font-size: 20px
+		transition: 0.5s
+	a:hover
+		text-decoration: none
+		color: #070550
+		
+	img
+		max-height: 200px
+		margin-left: auto
+		margin-right: auto
+.navi
+	
+	height: 300px
+	width: 100%
+	background-color: #ffffff
+	border-radius: 10px
+	border: 3px solid #1c83a0
+	margin-bottom: 50px
+	margin-top: 20px
+	margin-bottom: 400px
+
+.slick-prev, .slick-next
+	background-color: red
+	display: none
+	

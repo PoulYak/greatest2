@@ -1,0 +1,106 @@
+.contant {
+  padding-top: 60px;
+}
+
+.contantblock {
+  min-width: 200px;
+  height: 400px;
+  background-color: #cf22cc;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: 50%, 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contantblock a {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contantblock:hover {
+  -webkit-box-shadow: 5px 5px 10px #180d6d;
+          box-shadow: 5px 5px 10px #180d6d;
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+
+.contantblock:hover a {
+  text-decoration: none;
+  color: #cf22cc;
+}
+
+.contantblock a {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.REW {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #FFFF;
+}
+
+.brend-A {
+  background-image: url(../images1/apple1.jpg);
+}
+
+.brend-S {
+  background-image: url(../images1/samsung-galaxy-watch-active-3.jpg);
+}
+
+.brend-X {
+  background-image: url(../images1/Xia.jpg);
+}
+
+.brend-Hu {
+  background-image: url(../images1/Hu.jpg);
+}
+
+.brend-M {
+  background-image: url(../images1/M.jpg);
+}
+
+.brend-F {
+  background-image: url(../images1/F.jpg);
+}
+
+.brend-E {
+  background-image: url(../images1/E.jpg);
+}
+
+.brend-G {
+  background-image: url(../images1/G.jpg);
+}
+
+.brend-K {
+  background-image: url(../images1/K.jpg);
+}
+
+@media (max-width: 1000px) {
+  .contant {
+    background-size: auto 100vh;
+  }
+}
+
+@media (min-width: 1000.001px) {
+  .contant {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 577px) {
+  .contant {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+/*# sourceMappingURL=stylelast.css.map */

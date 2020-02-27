@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACZ,WAAW,EAAE,KAAK;EAClB,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/stylehelp.sass"
+    ],
+    "names": [],
+    "file": "stylehelp.css"
+}

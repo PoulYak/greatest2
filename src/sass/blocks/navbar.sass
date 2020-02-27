@@ -1,0 +1,762 @@
+@keyframes spin1
+	0%
+		transform: translate(-50%,-50%) rotate(0deg)
+	100%
+		transform: translate(-50%,-50%) rotate(360deg)
+@keyframes spin2
+	0%
+		transform: translate(-50%,-50%) rotate(0deg)
+	100%
+		transform: translate(-50%,-50%) rotate(-360deg)
+@keyframes spin3
+	0%
+		transform:  rotate(0deg)
+	100%
+		transform:  rotate(359deg)
+#loader_perc
+	display: none
+.elements2
+
+	&::after
+		content: ""
+		transform-origin: left
+		background-color: #3d3b3b
+		width: 8px
+		height: 25px
+		position: absolute
+		top: calc(50% - 40px) 
+		left: calc(50% + 78px)
+
+		transform: translate(-50%,-50%)
+		z-index: 202
+		transform-origin: left
+		border-radius: 50px
+	&::before
+		content: ""
+		transform-origin: center
+		background-color: #000
+		width: 150px
+		height: 170px
+		position: absolute
+		top: 50% 
+		left: 50%
+
+		transform: translate(-50%,-50%)
+		z-index: 0
+		transform-origin: center
+		border-radius: 30px
+.elements3
+
+	&::after
+		content: ""
+		transform-origin: left
+		background-color: #3d3b3b
+		width: 100px
+		height: 25px
+		position: absolute
+		top: calc( 50% - 80px )
+		left: 50% 
+
+		transform: translate(-50%,-50%)
+		z-index: -1
+		transform-origin: left
+		border-radius: 50px
+	&::before
+		content: ""
+		transform-origin: left
+		background-color: #3d3b3b
+		width: 100px
+		height: 25px
+		position: absolute
+		top: calc( 50% + 80px )
+		left: 50% 
+		transform: translateX(25px)
+		transform: translate(-50%,-50%)
+		z-index: -1
+		transform-origin: left
+		border-radius: 50px
+.elements
+	&::after
+		content: ""
+		transform-origin: left
+		background-color: #f3ae35
+		width: 60px
+		height: 2px
+		position: absolute
+		top: 50%
+		left: 50% 
+		transform: translateX(25px)
+		transform: translate(-50%,-50%)
+		z-index: 202
+		transform-origin: left
+		border-radius: 50px
+		animation: spin3 0.1s infinite linear 
+	&::before
+		content: ""
+	
+		background-color: #f3ae35
+		width: 6px
+		height: 6px
+		position: absolute
+		top: 50%
+		left: 50% 
+		transform: translate(-50%,-50%)
+		z-index: 203
+		
+		border-radius: 50%
+		animation: spin2 100s infinite linear 
+.dot::after,  .dot::before
+	content: ""
+	transform-origin: left
+	background-color: #000
+	width: 3px
+	height: 3px
+	position: absolute
+	
+	transform: translateX(25px)
+	transform: translate(-50%,-50%)
+	z-index: 2020
+	transform-origin: left
+	border-radius: 2px
+.lines
+	z-index: 1000
+	.first-i
+		&::after
+		 content: ""
+		 transform-origin: left
+		 background-color: #000
+		 width: 3px
+		 height: 8px
+		 position: absolute
+		 top: calc( 50% - 60px )
+		 left: 50% 
+		 transform: translateX(25px)
+		 transform: translate(-50%,-50%)
+		 z-index: 205
+		 transform-origin: left
+		 border-radius: 2px
+		&::before
+			content: ""
+			transform-origin: left
+			background-color: #000
+			width: 3px
+			height: 8px
+			position: absolute
+			top: calc( 50% + 60px )
+			left: 50% 
+			transform: translateX(25px)
+			transform: translate(-50%,-50%)
+			z-index: 205
+			transform-origin: left
+			border-radius: 2px
+
+	.second-i
+		&::after
+		 content: ""
+		 transform-origin: left
+		 background-color: #000
+		 width: 8px
+		 height: 3px
+		 position: absolute
+		 transform: translateX(25px)
+		 transform: translate(-50%,-50%)
+		 z-index: 205
+		 transform-origin: left
+		 border-radius: 2px
+		 top: 50%
+		 left:  calc( 50% - 60px )
+		 
+		&::before
+			position: absolute
+			top: 50%
+		 left:  calc( 50% + 60px )
+			content: ""
+		 transform-origin: left
+		 background-color: #000
+		 width: 8px
+		 height: 3px
+		 position: absolute
+
+		 transform: translateX(25px)
+		 transform: translate(-50%,-50%)
+		 z-index: 205
+		 transform-origin: center
+		 border-radius: 2px
+	.first-d
+		&::after
+
+		 top: calc(50% + 28px)
+		 left:  calc( 50% - 53px )
+		&::before
+			top: calc(50% - 28px)
+		 left:  calc( 50% + 53px )
+	.second-d
+		&::after
+		 top: calc(50% + 49px)
+		 left:  calc( 50% - 32px )
+
+		&::before
+
+			top: calc(50% - 49px)
+		 left:  calc( 50% + 32px )
+	.third-d
+		&::after
+		 top: calc(50% - 49px)
+		 left:  calc( 50% - 32px )
+
+		&::before
+
+			top: calc(50% + 49px)
+		 left:  calc( 50% + 32px )
+	.fourth-d
+		&::after
+
+		 top: calc(50% - 28px)
+		 left:  calc( 50% - 53px )
+		&::before
+			top: calc(50% + 28px)
+		 left:  calc( 50% + 53px )
+.preloader
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background: #3f0fa6
+	z-index: 100
+	transition: 0.4s all
+	opacity: 1
+	visibility: visible
+	display: flex
+	text-align: center
+	
+	.loader
+
+
+		width: 130px
+		height: 150px
+		background-color: #fff
+		border-radius: 20px
+		position: relative
+		left: 50%
+		top: 50%
+		font-size: 30px
+		transform: translate(-50%,-50%)
+		div
+			
+			position: absolute
+
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			border-radius: 50%
+		
+		
+	
+				
+		
+	&-done
+		opacity: 0
+		visibility: hidden	
+	&::after
+		content: ""
+		
+		background-color: #000
+		width: 60px
+		height: 5px
+		position: absolute
+		top: 50%
+		left: 50% 
+		transform: translateX(25px)
+		
+		z-index: 201
+		transform-origin: left
+		border-radius: 50px
+		animation: spin3 0.5s infinite linear 
+	&::before
+		content: ""
+		transform: translate(-50%,-50%)
+		background-color: #000
+		width: 30px
+		height: 4px
+		position: absolute
+		top: 50%
+		left: 50% 
+		z-index: 202
+		transform-origin: left
+		border-radius: 25px
+		animation: spin3 10s infinite linear 
+	
+$trans: 0.5s
+.menu-list
+	a
+		transition: $trans
+		color: #da42f5
+		
+		border-radius: 10px
+
+	a:hover
+		color: #da42f5
+		font-size: 18px
+		
+		text-decoration: none
+		
+	
+
+
+
+.wt
+	background-color: #000
+.nav-logo
+	color: #12091f
+	span
+		color: #d4c600
+
+	
+@media screen and (min-width: 1200.1px)
+	.menu-list
+		&::after
+  	content: ""
+  	width: 400px
+  	height: 4px
+			border-radius: 10px
+  	background-color: #fff
+  	position: absolute
+  	transition: 0.3s
+  	left: calc( 50% - 200px )
+			
+			
+			top: 67px
+	.nav-logo
+		text-align: center
+		vertical-align: center
+		font-size: 30px
+		font-weight: 700
+		margin: auto 0 auto 20px
+		
+
+		span
+			font-size: 16px
+	.section
+		display: none
+	.menu-btn
+		display: none
+	.menu
+		position: fixed
+		background-color: #561363
+		background-image: linear-gradient(135deg,  #61042e,  #f017d3)
+		width: 100%
+		height: 80px
+		padding-bottom: 30px
+		display: flex
+		transform: translate(0, -50px)
+		transition: 0.4s
+		z-index: 99
+		justify-content: space-between
+		box-shadow: 2px 2px 2px
+		&:hover
+			.menu-list::after
+				top: 50px
+				transform: scaleX(0)
+			
+
+		&:hover
+			height: 60px
+			padding-bottom: 0
+			transform: translate(0, 0)
+			background-image: linear-gradient(135deg,  #02457e,  #12091f)
+		
+		&:hover .watch
+			height: 40px
+				
+			transition-duration: ease-in-out
+		&-list
+			text-decoration: none
+			width: 30vw
+			display: flex
+			justify-content: space-between
+			
+			a 
+				font-size: 17px
+				
+ 			text-transform: uppercase
+				
+				margin: auto 0
+				border-radius: 3px
+				
+				
+					
+		&-cont
+			margin: auto 20px auto 0
+			a
+				filter: none
+				transition: 0.4s
+			 &:hover
+			 	filter: hue-rotate(90deg)
+
+			
+	.watch
+		transition: 0.3s
+		height: 20px
+		filter: invert(1)
+
+
+
+	 
+	
+@media ( max-height: 1000px ) and ( max-width: 1900px )
+	.contant
+		background-image: url(../images1/fon-background1.jpg) 
+		
+	 background-repeat: no-repeat
+	 background-size: 100vw auto
+	 background-position: 0% 50%
+	 background-attachment: fixed
+@media ( min-height: 1000.1px )  
+	.contant
+  background-image: url(../images1/fon-background1.jpg) 
+	 background-repeat: no-repeat
+	 background-size: auto 100vh
+	 background-attachment: fixed
+	 padding-top: 80px
+
+@media ( min-width: 1900.1px )  
+	.contant
+		background-size: 100vw auto
+  background-image: url(../images1/fon-background1.jpg) 
+	 background-repeat: no-repeat
+	 background-size: 100vw 
+	 background-attachment: fixed
+	 padding-top: 80px
+
+
+@media (min-width: 768px) and (max-width: 1200px)
+	.contant
+		position: relative
+		overflow-x: hidden
+	.menu
+		background-image: linear-gradient(180deg, #02457e,  #12091f)
+ 	position: fixed
+ 	left: 0
+		top: 0
+ 	width: 37%
+ 	height: 100vh
+ 	display: flex
+ 	align-items: center
+ 	justify-content: space-between
+		flex-direction: column
+ 	background-color: #000
+ 	transition: $trans
+ 	transform: translateX(-100%)
+		z-index: 99
+ 	&-list
+ 		display: flex
+ 		justify-content: space-around
+ 		align-items: center
+ 		height: 50%
+ 		flex-direction: column
+ 		a
+				transition: 0
+ 			text-decoration: none
+ 			text-transform: uppercase
+ 			font-weight: 900
+				
+				
+ 	&-btn
+ 		width: 30px
+ 		height: 30px
+ 		background-color:  #2bc2d9
+ 		position: absolute
+ 		right: -35px
+ 		top: 5px
+			border-radius: 7px
+			
+ 	&_active
+ 		transform: translateX(0%)
+	.contant
+		transition: $trans
+		overflow-x: hidden
+		z-index: 0
+		
+		&_active
+			transform: translateX(37%)
+			overflow-x: hidden
+	.watch
+		filter: invert(1)
+	.nav-logo
+		position: absolute
+		top: 10px
+		left: 10px
+		
+		font-size: 30px
+		font-weight: 700
+		span
+			position: absolute
+			top: 42px
+			right: 5px
+			font-size: 14px
+			font-weight: 500
+	
+	.menu-cont
+		margin-bottom: 30px
+		a
+			transition: 0.4s
+			&:hover
+				filter: hue-rotate(90deg)
+	
+	
+@media (max-width: 767.98px) and (min-width: 400px)
+	.menu-cont
+		display: none
+		a
+			filter: hue-rotate(90deg)
+	.section
+		position: fixed
+		width: 0
+		height: 0
+		box-shadow: 5px 4px 10px
+		background-image: linear-gradient(135deg, #02457e,#412170,  #12091f)
+		
+		border-radius: 0 0 100% 0 
+		transition: 0.4s
+
+
+	.menu
+		display: none
+		position: fixed
+		display: flex
+		
+		
+		z-index: 99
+		&-list
+			a
+				display: none
+
+				
+		nav a 
+			display: inline-block
+			position: absolute
+			
+		 height: 50px
+		 width: 50px
+			font-size: 10px
+		 border-radius: 50%
+		 display: flex
+		 justify-content: center
+		 align-items: center
+		 transition: 0.3s
+		 left: 10px
+		 top: 10px
+		 z-index: 0
+			text-decoration: none
+			
+			
+		&-btn
+			box-shadow: 0 0 20px 10px
+			position: fixed
+		 width: 60px
+		 height: 60px
+		 top: 10px
+		 left: 10px
+		 background-color: #000
+		 z-index: 3
+			border-radius: 40%
+			transition: $trans
+			background-image: url(../images/72472.png) 
+			background-repeat: no-repeat
+			background-position: center center
+			background-color:  #2bc2d9
+		&_active
+			
+			height: 50vw
+		 width: 50vw
+			.menu-btn
+				background-color:  #2bc2d9
+				box-shadow: 0 0 0px 0px
+				background-image: url(../images/72472.png) 
+			.section
+				height: 50vw
+				width: 50vw
+				max-width: 300px
+				max-height: 300px
+				
+			nav a
+				width: 65px
+				height: 65px
+				font-size: 15px
+				font-weight: 700
+				&:hover
+					font-size: 15px
+					border: none
+					box-shadow: 1px 1px 15px #da42f5
+
+			.first
+				transform: translate(24vw, 11vw)
+			.second
+				transform: translate(15vw, 22vw)
+			.third
+				transform: translate(0, 28vw)
+	
+			
+
+	.watch
+		display: none
+	@media (min-width: 530px)
+		.nav-logo
+		
+		 position: fixed
+	  left: 75px
+	  top: 18px
+		 transform: translateX(-300%)
+		 transition: 0.4s
+		 span
+				width: 100px
+		 	position: fixed
+	  	left: 100px
+	  	top: 25px
+	 .menu_active
+			
+	 	.nav-logo
+				
+	 		font-weight: 700
+	 		display: block
+	 		transform: translateX(0)
+	 		
+	 		font-size: 24px
+				
+	 		span
+					transform: translateX(0)
+	 			
+	 			font-size: 14px
+ @media (max-width: 530px)
+		.nav-logo
+			display: none
+		.menu_active
+
+	 	.nav-logo
+				width: 100px
+	 		font-weight: 700
+	 		display: block
+	 		position: fixed
+	 		left: 75px
+	 		top: 7px
+	 		
+	 		font-size: 18px
+	 		span
+					display: none
+	 			
+@media (max-width: 399.98px)
+
+	
+	.watch
+		filter: invert(1)
+	.menu
+ 	position: fixed
+ 	left: 0
+		top: 0
+ 	width: 100vw
+ 	height: 100vh
+ 	display: flex
+ 	align-items: center
+ 	justify-content: space-between
+		flex-direction: column
+ 	background-image: linear-gradient(180deg, #02457e,  #12091f)
+ 	transition: $trans
+ 	transform: translateX(-100%)
+		z-index: 99
+ 	&-list
+ 		display: flex
+ 		justify-content: space-around
+ 		align-items: center
+ 		height: 50%
+ 		flex-direction: column
+ 		a
+ 			
+ 			text-transform: uppercase
+ 			font-weight: 900
+				transition: 0.5s
+				
+				&:hover
+					text-decoration: none
+ 	&-btn
+			box-shadow: 0 0 20px 10px
+ 		width: 30px
+ 		height: 30px
+ 		background-color:  #2bc2d9
+ 		position: absolute
+ 		right: -35px
+ 		top: 5px
+			transition: $trans
+			border-radius: 7px
+			
+ 	&_active
+ 		transform: translateX(0%)
+			z-index: 99
+			.nav-logo
+				display: block
+				font-weight: 700
+			.body
+				overflow-y: hidden
+				z-index: 0
+			.menu-btn
+				box-shadow: 0 0 20px 10px
+				right: 5px
+				background-color: #fff
+
+	.contant
+		transition: $trans
+		position: relative
+		z-index: 0
+		
+		&_active
+			overflow-y: hidden
+			z-index: 0
+			
+	.nav-logo
+		display: none
+		position: absolute
+		top: 25px
+		left: 10px
+		
+		font-size: 28px
+		min-width: 250px
+		transition: 1s
+		span
+			position: absolute
+			font-size: 14px
+			top: 30px
+			right: 0
+ .menu-cont
+		margin-bottom: 30px
+		a
+			transition: 0.4s
+			&:hover
+				filter: invert(1)
+	.inst, .vk
+		margin-right: 10px
+.underground
+	
+	width: 100%
+	position: relative
+	background-color: #040853
+	padding-top: 20px
+	@media  ( max-width: 600px )
+		height: 400px
+	@media  ( min-width: 600.1px )
+		height: 200px
+	&__title
+		
+		display: block
+		height: 50px
+		width: 100%
+		font-size: 30px
+		color: #ffffff
+		position: relative
+		&::after
+			display: block
+		 content: ''
+		 width: 100%
+		 height: 1px
+		 background-color: #fff
+		 position: absolute
+		 
