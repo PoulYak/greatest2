@@ -150,13 +150,13 @@
 
 @media (max-width: 500px) and (min-width: 320.1px) {
   .crit {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 @media (min-width: 500px) {
   .crit {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -202,13 +202,13 @@
 
 @media (max-width: 500px) and (min-width: 320.1px) {
   .price {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 @media (min-width: 500px) {
   .price {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
