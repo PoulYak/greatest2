@@ -11,13 +11,13 @@
   -webkit-perspective: 5000px;
           perspective: 5000px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 320.1px) {
   .card1 {
     min-width: 250px;
-    height: 500px;
+    height: 750px;
   }
 }
 
@@ -25,6 +25,13 @@
   .card1 {
     min-width: 450px;
     height: 600px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card1 {
+    min-width: 150px;
+    height: 750px;
   }
 }
 
@@ -111,7 +118,7 @@
 
 @media (max-width: 500px) {
   .this {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -141,6 +148,24 @@
           transform: rotateY(360deg);
 }
 
+@media (max-width: 500px) and (min-width: 320.1px) {
+  .crit {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 500px) {
+  .crit {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .crit {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 499.9px) {
   .crit h2 {
     font-size: 20px;
@@ -161,7 +186,7 @@
 }
 
 .price {
-  text-align: center;
+  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,18 +197,24 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #fff;
+  color: #000;
 }
 
-@media (max-width: 499.9px) {
+@media (max-width: 500px) and (min-width: 320.1px) {
   .price {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 500px) {
   .price {
-    font-size: 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .price {
+    font-size: 12px;
   }
 }
 
@@ -192,6 +223,10 @@
   display: block;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.price a {
+  font-size: 15px;
 }
 
 .success {
@@ -249,10 +284,27 @@ ul {
 
 .contant .title-top {
   width: 100%;
-  font-size: 35px;
   font-weight: bold;
   text-align: center;
-  color: #fff;
+  color: #0e578b;
+}
+
+@media (max-width: 500px) and (min-width: 320.1px) {
+  .contant .title-top {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 500px) {
+  .contant .title-top {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contant .title-top {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 993.9px) and (min-width: 768.1px) {
@@ -313,12 +365,6 @@ ul {
   color: #070550;
 }
 
-.slider-items img {
-  max-height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .navi {
   height: 300px;
   width: 100%;
@@ -328,10 +374,5 @@ ul {
   margin-bottom: 50px;
   margin-top: 20px;
   margin-bottom: 400px;
-}
-
-.slick-prev, .slick-next {
-  background-color: red;
-  display: none;
 }
 /*# sourceMappingURL=top.css.map */

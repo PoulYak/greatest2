@@ -398,13 +398,12 @@
 .menu-list a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #da42f5;
+  color: aliceblue;
   border-radius: 10px;
 }
 
 .menu-list a:hover {
   color: #da42f5;
-  font-size: 18px;
   text-decoration: none;
 }
 
@@ -420,7 +419,7 @@
   color: #d4c600;
 }
 
-@media screen and (min-width: 1200.1px) {
+@media (min-width: 1200.1px) {
   .menu-list::after {
     content: "";
     width: 400px;
@@ -499,7 +498,7 @@
   }
   .menu-list a {
     font-size: 17px;
-    text-transform: uppercase;
+    font-weight: 700;
     margin: auto 0;
     border-radius: 3px;
   }
@@ -525,35 +524,9 @@
   }
 }
 
-@media (max-height: 1000px) and (max-width: 1900px) {
-  .contant {
-    background-image: url(../images1/fon-background1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100vw auto;
-    background-position: 0% 50%;
-    background-attachment: fixed;
-  }
-}
-
-@media (min-height: 1000.1px) {
-  .contant {
-    background-image: url(../images1/fon-background1.jpg);
-    background-repeat: no-repeat;
-    background-size: auto 100vh;
-    background-attachment: fixed;
-    padding-top: 80px;
-  }
-}
-
-@media (min-width: 1900.1px) {
-  .contant {
-    background-size: 100vw auto;
-    background-image: url(../images1/fon-background1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-attachment: fixed;
-    padding-top: 80px;
-  }
+.contant {
+  background-color: aliceblue;
+  background-image: none;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -608,8 +581,8 @@
     -webkit-transition: 0;
     transition: 0;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 700;
   }
   .menu-btn {
     width: 30px;
@@ -878,7 +851,6 @@
             flex-direction: column;
   }
   .menu-list a {
-    text-transform: uppercase;
     font-weight: 900;
     -webkit-transition: 0.5s;
     transition: 0.5s;

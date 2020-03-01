@@ -3,17 +3,21 @@
 .text-block
 	display: block
 .card1
- 
-	@media ( max-width: 500px)
+	@media ( max-width: 500px) and ( min-width: 320.1px)
 		min-width: 250px
-		height: 500px
+		height: 750px
 	@media ( min-width: 500px)
 		min-width: 450px
 		height: 600px
+ @media ( max-width: 320px) 
+		min-width: 150px
+		height: 750px
+	
+	
  
  perspective: 5000px
  position: relative
-	margin-bottom: 40px
+	margin-bottom: 50px
 
 
 .font, .back
@@ -72,7 +76,7 @@
 	max-width: 300px
 	min-width: 40px 
 	@media ( max-width: 500px)
-		width: 50% 
+		width: 100% 
 	@media ( min-width: 500px)
 			width: 100% 
 		
@@ -92,6 +96,12 @@
 
 
 .crit
+	@media ( max-width: 500px) and ( min-width: 320.1px)
+		font-size: 14px
+	@media ( min-width: 500px)
+		font-size: 16px
+ @media ( max-width: 320px) 
+		font-size: 12px
 	h2
 		@media ( max-width: 499.9px )
 			font-size: 20px
@@ -107,21 +117,26 @@
 
 .price
 	
-	@media ( max-width: 499.9px )
-		font-size: 15px
-	@media ( min-width: 500px )
-		font-size: 25px
-	text-align: center
+
+	@media ( max-width: 500px) and ( min-width: 320.1px)
+		font-size: 14px
+	@media ( min-width: 500px)
+		font-size: 16px
+ @media ( max-width: 320px) 
+		font-size: 12px
+	text-align: justify
 	display: flex
 	justify-content: center
 	flex-direction: column
-	color: #fff
+	color: #000
 	p
 		font-weight: bold
 		display: block
 		margin-top: auto
 		margin-bottom: auto
-
+	a
+		
+		font-size: 15px
 
 .success
 	@media ( max-width: 992px)
@@ -162,10 +177,17 @@ ul
 .contant
 	.title-top
 		width: 100%
-		font-size: 35px
+		@media ( max-width: 500px) and ( min-width: 320.1px)
+			font-size: 23px
+		@media ( min-width: 500px)
+			font-size: 35px
+ 	@media ( max-width: 320px) 
+			font-size: 18px
+			
+		
 		font-weight: bold
 		text-align: center
-		color: #fff
+		color: #0e578b
 	@media ( max-width:  993.9px) and ( min-width:  768.1px)
 		padding-top: 80px
 	@media ( max-width:  1200px)
@@ -198,10 +220,7 @@ ul
 		text-decoration: none
 		color: #070550
 		
-	img
-		max-height: 200px
-		margin-left: auto
-		margin-right: auto
+
 .navi
 	
 	height: 300px
@@ -213,7 +232,5 @@ ul
 	margin-top: 20px
 	margin-bottom: 400px
 
-.slick-prev, .slick-next
-	background-color: red
-	display: none
+
 	
