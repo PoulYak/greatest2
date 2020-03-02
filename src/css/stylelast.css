@@ -3,6 +3,8 @@
 }
 
 .contantblock {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   min-width: 200px;
   height: 400px;
   background-color: #cf22cc;
@@ -10,18 +12,10 @@
   background-size: cover;
   background-position: 50%, 50%;
   background-repeat: no-repeat;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.contantblock a {
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .contantblock:hover {
-  -webkit-box-shadow: 5px 5px 10px #180d6d;
-          box-shadow: 5px 5px 10px #180d6d;
   -webkit-transform: translate(-5px, -5px);
           transform: translate(-5px, -5px);
 }

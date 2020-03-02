@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACZ,KAAK,EAAE,GAAG;EACV,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,KAAK;CAAG;;AACpB,AAAA,QAAQ,CAAC;EACR,WAAW,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/stylechang.sass"
+    ],
+    "names": [],
+    "file": "stylechang.css"
+}

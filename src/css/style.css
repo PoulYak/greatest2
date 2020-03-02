@@ -77,8 +77,6 @@ body {
 
 .for-backdrop:hover {
   text-decoration: none;
-  -webkit-box-shadow: 5px 5px 10px #180d6d;
-          box-shadow: 5px 5px 10px #180d6d;
 }
 
 .for-backdrop:hover span {
