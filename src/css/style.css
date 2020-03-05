@@ -66,13 +66,18 @@ body {
 
 .for-backdrop span {
   text-decoration: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   display: inline-block;
   margin: auto 0;
   color: #fff;
   font-size: 30px;
   font-weight: 700;
+}
+
+.for-backdrop span:hover {
+  text-decoration: none;
+  color: #cf22cc;
 }
 
 .for-backdrop:hover {

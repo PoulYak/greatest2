@@ -35,6 +35,11 @@
   }
 }
 
+.linktopod {
+  display: block;
+  max-width: 100px;
+}
+
 .underground {
   background-color: #040853;
 }
