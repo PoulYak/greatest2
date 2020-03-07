@@ -412,7 +412,7 @@
 }
 
 .nav-logo {
-  color: #12091f;
+  color: #fff;
 }
 
 .nav-logo span {
@@ -519,8 +519,6 @@
     -webkit-transition: 0.3s;
     transition: 0.3s;
     height: 20px;
-    -webkit-filter: invert(1);
-            filter: invert(1);
   }
 }
 
