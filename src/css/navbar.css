@@ -839,10 +839,6 @@
 }
 
 @media (max-width: 399.98px) {
-  .watch {
-    -webkit-filter: invert(1);
-            filter: invert(1);
-  }
   .menu {
     position: fixed;
     left: 0;
