@@ -953,8 +953,8 @@
     transition: 0.4s;
   }
   .menu-cont a:hover {
-    -webkit-filter: invert(1);
-            filter: invert(1);
+    -webkit-filter: hue-rotate(90deg);
+            filter: hue-rotate(90deg);
   }
   .inst, .vk {
     margin-right: 10px;

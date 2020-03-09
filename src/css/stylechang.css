@@ -7,4 +7,44 @@
 .contant {
   padding-top: 60px;
 }
+
+.contantblock {
+  padding: 20px 0;
+}
+
+@media (min-width: 1200.1px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 400.1px) and (max-width: 1200px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200.1px) {
+  a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 400.1px) and (max-width: 1200px) {
+  a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  a {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=stylechang.css.map */
