@@ -773,13 +773,23 @@ $trans: 0.5s
 		 height: 1px
 		 background-color: #fff
 		 position: absolute
+
+
+
+
+
+
+
+
+
+
 .underground
 	padding-top: 20px
 	background-color: #261ba5
 	min-height: 100px
-	&-title
-		color: #ffffff
-		font-size: 24px
+	padding-bottom: 50px
+	
+	&-block
 		position: relative
 		&::after
 			position: absolute
@@ -791,4 +801,30 @@ $trans: 0.5s
 			left: 0
 			bottom: -10px
 			background-color: #fff
+	&-title
+		color: #ffffff
+		font-size: 24px
+		@media ( min-width: 576px )
+				text-align: left
+		@media ( max-width:  575.98px)
+			text-align: center
+		&__images
+			@media ( max-width:  575.98px)
+				text-align: center
+				
+			@media ( min-width: 576px )
+				text-align: right
+				
+			
+			a
+				filter: none
+				transition: 0.4s
+			 &:hover
+			 	filter: hue-rotate(90deg)
+	&-links
+		margin-top: 20px
+		
+		div
+			a
+				font-size: 20px
 

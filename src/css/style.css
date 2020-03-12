@@ -164,13 +164,6 @@ body {
   }
 }
 
-@media (max-width: 575.98px) {
-  .contant {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
 .contant-title {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
